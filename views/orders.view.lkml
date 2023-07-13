@@ -48,6 +48,12 @@ view: orders {
     type: count
     drill_fields: [detail*]
   }
+  measure: trillion {
+    label: "Market Value"
+    type: sum
+    sql:    1000000000000*2;;
+    value_format: "#,##0.00"
+  }
 
   # ----- Sets of fields for drilling ------
   set: detail {
